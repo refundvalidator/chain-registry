@@ -22,6 +22,7 @@ jobs:
           bash .github/workflows/utility/update_lists.sh
           git config user.name workflow
           git config user.email workflow
-          git add .
+          git add testnets.json
+          git add mainnets.json
           git commit --amend --no-edit
           git push --force-with-lease
