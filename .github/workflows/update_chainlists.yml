@@ -2,11 +2,11 @@ name: Update Chainlists
 
 on:
   push:
-    paths:
-      - './**'
+    branches:
+      - '*'
   pull_request:
-    paths:
-      - './**'
+    branches:
+      - '*'
 
 permissions: write-all
 
