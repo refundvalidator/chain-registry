@@ -15,14 +15,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@master
         
       - name: Update JSON file
         run: |
           bash .github/workflows/utility/update_lists.sh
-          git config user.name workflow
-          git config user.email workflow
-          git add testnets.json
-          git add mainnets.json
-          git commit --amend --no-edit
-          git push --force-with-lease
+          
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9.1.1
+        with:
+          message: "Updated Lists"
+          author_name: "Workflow Updater"
