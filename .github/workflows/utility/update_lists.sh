@@ -10,4 +10,4 @@ printf '%s\n' "{
   \"testnets\": [
     \"${files//$'\n'/$'",\n    "'}\"
   ]
-}" > mainnets.json
+}" > testnets.json
