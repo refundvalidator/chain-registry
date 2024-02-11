@@ -1,5 +1,5 @@
 #!/bin/bash
-files="$(ls -d */ | grep -vE "^#|\.|_")"
+files="$(ls -d */ | grep -vE "^#|\.|_" | xargs -n 1 basename)"
 printf '%s\n' "{
   \"mainnets\": [
     \"${files//$'\n'/$'",\n    "'}\"
