@@ -141,6 +141,9 @@
     "terpnetwork",
     "terra",
     "terra2",
+    "testchain",
+    "testchain2",
+    "testnets",
     "tgrade",
     "thorchain",
     "umee",
@@ -149,6 +152,6 @@
     "uptick",
     "vidulum",
     "xion",
-    "xpla" 
+    "xpla"
   ]
 }
