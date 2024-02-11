@@ -22,5 +22,6 @@ jobs:
           bash .github/workflows/utility/update_lists.sh
           git config user.name workflow
           git config user.email workflow
-          git commit --amend --reuse-message=HEAD
-          git push --force
+          git add .
+          git commit --amend --no-edit
+          git push --force-with-lease
