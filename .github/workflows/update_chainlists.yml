@@ -20,9 +20,5 @@ jobs:
       - name: Update JSON file
         run: |
           bash .github/workflows/utility/update_lists.sh
-          
-      - name: Commit changes
-        uses: EndBug/add-and-commit@v9.1.1
-        with:
-          message: "Updated Lists"
-          author_name: "Auto Updater"
+          git commit --amend --reuse-message=HEAD
+          git push --force
