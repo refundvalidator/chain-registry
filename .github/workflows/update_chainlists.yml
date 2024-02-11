@@ -19,7 +19,7 @@ jobs:
         
       - name: Update JSON file
         run: |
-          bash .github/workflows/utility/update.sh
+          bash .github/workflows/utility/update_lists.sh
           
       - name: Commit changes
         uses: EndBug/add-and-commit@v9.1.1
